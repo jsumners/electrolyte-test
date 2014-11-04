@@ -1,0 +1,15 @@
+{
+  "name": "electrolyte-test",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "electrolyte": "0.0.6",
+    "hapi": "^7.2.0"
+  }
+}
