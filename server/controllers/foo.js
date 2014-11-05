@@ -1,8 +1,5 @@
 'use strict';
 
-exports['@require'] = ['settings'];
-exports['@singleton'] = true;
-
 exports = module.exports = function(settings) {
   var obj = {};
 
@@ -12,3 +9,6 @@ exports = module.exports = function(settings) {
 
   return obj;
 };
+
+exports['@require'] = ['config/settings'];
+exports['@singleton'] = true;

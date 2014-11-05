@@ -1,8 +1,5 @@
 'use strict';
 
-exports['@require'] = ['controllers/foo'];
-exports['@singleton'] = true;
-
 exports = module.exports = function(fooController) {
   return [
     {
@@ -12,3 +9,6 @@ exports = module.exports = function(fooController) {
     }
   ];
 };
+
+exports['@require'] = ['controllers/foo'];
+exports['@singleton'] = true;

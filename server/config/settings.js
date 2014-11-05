@@ -1,8 +1,6 @@
 'use strict';
 
-exports['@singleton'] = true;
-
-exports = module.exports = {
+var settings = {
   server: {
     interfaceAddress: '127.0.0.1',
     port: 8080
@@ -12,3 +10,9 @@ exports = module.exports = {
     msg: "Hello World!"
   }
 };
+
+exports = module.exports = function() {
+  return settings;
+};
+
+exports['@singleton'] = true;
